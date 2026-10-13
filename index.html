@@ -1,71 +1,205 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sleek Restaurant</title>
+    <title>Sleek | A Little Taste of Happiness</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+    <!-- Header -->
     <header>
-        <h1>Sleek</h1>
-        <p>A Little Taste of Happiness</p>
+        <div class="logo">
+            <h1>Sleek<span>.</span></h1>
+            <p>A Little Taste of Happiness</p>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Food Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#menu">Food Menu</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="small-heading">WELCOME TO SLEEK</p>
 
-    <section id="home">
-        <h2>Welcome to Sleek</h2>
-        <p>Discover delicious vegetarian food
-        made fresh for every occasion.</p>
+            <h2>Good Food.<br>
+                <span>Great Moments.</span>
+            </h2>
+
+            <p class="hero-description">
+                Discover delicious vegetarian food made fresh
+                with love, quality ingredients and care.
+            </p>
+
+            <a href="#menu" class="button">Explore Our Menu &rarr;</a>
+        </div>
     </section>
 
-    <section id="menu">
-        <h2>Our Special Dishes</h2>
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
 
-        <div class="food">
-            <h3>Cheese Pizza</h3>
-            <p>Price: ₹180</p>
-            <p>Cheesy pizza with fresh toppings.</p>
+        <p class="small-heading">OUR SPECIAL DISHES</p>
+        <h2 class="section-title">Fresh, Healthy & Delicious</h2>
+
+        <p class="section-description">
+            Every bite is made to bring a little happiness to your day.
+        </p>
+
+        <div class="food-container">
+
+            <!-- Food 1 -->
+            <div class="food">
+                <img
+                    src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=85"
+                    alt="Freshly baked cheese pizza">
+
+                <div class="food-info">
+                    <h3>Cheese Pizza</h3>
+                    <p class="price">₹180</p>
+                    <p>Cheesy pizza with fresh and delicious toppings.</p>
+                    <a href="#contact" class="food-button">Order Now &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Food 2 -->
+            <div class="food">
+                <img
+                    src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=800&q=85"
+                    alt="Delicious paneer rolls">
+
+                <div class="food-info">
+                    <h3>Paneer Roll</h3>
+                    <p class="price">₹110</p>
+                    <p>Spicy paneer wrapped in soft and fresh bread.</p>
+                    <a href="#contact" class="food-button">Order Now &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Food 3 -->
+            <div class="food">
+                <img
+                    src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=85"
+                    alt="Fresh vegetable sandwich">
+
+                <div class="food-info">
+                    <h3>Veg Sandwich</h3>
+                    <p class="price">₹75</p>
+                    <p>Fresh vegetables with a creamy and tasty filling.</p>
+                    <a href="#contact" class="food-button">Order Now &rarr;</a>
+                </div>
+            </div>
+
         </div>
 
-        <div class="food">
-            <h3>Paneer Roll</h3>
-            <p>Price: ₹110</p>
-            <p>Spicy paneer wrapped in soft bread.</p>
+        <a href="#contact" class="button menu-button">
+            View Full Menu &rarr;
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85"
+                alt="Warm and welcoming restaurant interior">
         </div>
 
-        <div class="food">
-            <h3>Veg Sandwich</h3>
-            <p>Price: ₹75</p>
-            <p>Fresh vegetables with creamy filling.</p>
+        <div class="about-content">
+            <p class="small-heading">OUR STORY</p>
+
+            <h2>More Than Just Food</h2>
+
+            <p>
+                At Sleek, we believe great food creates great memories.
+                Our restaurant brings together fresh vegetarian meals,
+                quality ingredients and a welcoming atmosphere.
+            </p>
+
+            <p>
+                Whether you are meeting friends, spending time with
+                family or simply enjoying your favourite dish, we want
+                every visit to feel special.
+            </p>
+
+            <div class="features">
+                <div>
+                    <span>✓</span>
+                    <p>100% Vegetarian</p>
+                </div>
+
+                <div>
+                    <span>✿</span>
+                    <p>Fresh Ingredients</p>
+                </div>
+
+                <div>
+                    <span>♡</span>
+                    <p>Made With Care</p>
+                </div>
+            </div>
         </div>
 
-        <p><button type="button">View Full Menu</button></p>
     </section>
 
-    <section id="about">
-        <h2>About Our Restaurant</h2>
-        <p>At Sleek, we serve fresh vegetarian
-        meals with quality ingredients and care.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+
+        <div class="contact-info">
+            <p class="small-heading">GET IN TOUCH</p>
+
+            <h2>Visit Us Today</h2>
+
+            <p>✉ &nbsp; Email: sleek@example.com</p>
+            <p>◷ &nbsp; Opening Hours: 10 AM – 10 PM</p>
+            <p>⌖ &nbsp; Visit us for a delicious meal!</p>
+
+            <a href="mailto:sleek@example.com" class="button">
+                Contact Us &rarr;
+            </a>
+        </div>
+
+        <div class="contact-image">
+            <img
+                src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1000&q=85"
+                alt="Fresh vegetables and healthy ingredients">
+        </div>
+
     </section>
 
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <p>Email: sleek@example.com</p>
-        <p>Opening Hours: 10 AM - 10 PM</p>
-    </section>
-
+    <!-- Footer -->
     <footer>
-        <p>Good Food. Great Moments.</p>
-        <p>Copyright 2026 Sleek Restaurant</p>
+        <div class="footer-logo">
+            <h2>Sleek<span>.</span></h2>
+            <p>A Little Taste of Happiness</p>
+        </div>
+
+        <div class="footer-message">
+            <p>Good Food. Great Moments.</p>
+            <small>Copyright &copy; 2026 Sleek Restaurant</small>
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+        </div>
     </footer>
 
 </body>
 </html>
+   
